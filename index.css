@@ -1,0 +1,116 @@
+body, html { 
+    background-image:linear-gradient(to left, rgba(0,0,0,0) 75%, #611818 0%),
+     url('./assetts/Coding-Challenge-Image.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.parent {
+    height: 100vh;
+}
+
+.container {
+    /* height: 1000px; */
+    position: relative;
+    top: 45%;
+    /* left: 15%; */
+}
+
+.container h1 {
+    color: whitesmoke;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 15vw;
+    /* animation: fadeOut 2s; */
+    /* animation-fill-mode: forwards; */
+}
+
+
+.animated_header_out {
+    color: whitesmoke;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 15vw;
+    animation: fadeOut 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.animated_header_in {
+    color: whitesmoke;
+    font-family: 'Libre Bodoni', serif;
+    font-size: 15vw;
+    animation: fadeIn 0.3s;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+}
+
+/* Header */
+.container h5 {
+    font-family: 'Roboto Flex', sans-serif;
+    color: whitesmoke;
+}
+
+/* Caption and button  */
+.container .flex_container {
+    display: flex;
+    align-items: center;
+}
+
+.flex_container button {
+    background: transparent;
+    border: none;
+}
+
+/* modal */
+.fancy_modal {
+    text-align: center;
+    min-height: 20em;
+    max-height: 10em;
+    background-color: whitesmoke;
+    /* border-radius: 5% / 50%; */
+    width: 50%;
+    position: absolute;
+    z-index: 3;
+    /* top:0;    */
+    bottom: 0;
+    display: none;
+    box-shadow: 0 0 20px;
+}
+
+.fancy_modal h2 {
+    color: #611818;
+    font-family: 'Libre Bodoni', serif;
+    position: relative;
+}
+
+
+/* animations */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes  fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* .fancy_modal::after {
+    content: '';
+    height: 10px;
+    width: 200px;
+    background-color: #611818;
+} */
