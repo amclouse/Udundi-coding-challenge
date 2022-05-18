@@ -134,6 +134,18 @@ body, html {
     padding: 5px;
 }
 
+#insta_svg {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+#fb_svg {
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+}
+
 /* animations */
 @keyframes fadeOut {
     from {
