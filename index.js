@@ -17,15 +17,17 @@ const chars = header.textContent.split("");
 openButton.addEventListener('click', function() {
     // header.className = "animated_header_out";
 
-    gsap.fromTo(header, {opacity: 1}, {opacity: 0})
+    gsap.fromTo(header, {opacity: 1}, {opacity: 0});
     gsap.fromTo('.fancy_modal', {scale: 0, borderRadius: "50%"}, {scale: 1, duration: 0.5, delay: 0.25, display: 'block', borderRadius: "0"});
     // gsap.fromTo('close_button', {scale: 1}, {scale: 0.7, duration: 0.5});
     
     //open button animation
-    gsap.fromTo(openButton, {scale: 0.5}, {scale: 1, duration: 0.5})
+    gsap.fromTo(openButton, {scale: 0.5}, {scale: 1, duration: 0.5});
     //     .to({scale: 1, duration: 0.5})
 
+
     gsap.fromTo(flexContainer, {opacity: 1}, {opacity: 0, duration: 0.5});
+    // gsap.fromTo()
     
 });
 
@@ -34,6 +36,6 @@ closeButton.addEventListener('click', function() {
     gsap.fromTo(flexContainer, {opacity: 0}, {opacity: 1, duration: 1, delay: 0.2});
     gsap.fromTo(header, {opacity: 0}, {opacity: 1, delay:0.2});
 
-
+    console.log('closed');
 
 });

@@ -67,25 +67,72 @@ body, html {
 /* modal */
 .fancy_modal {
     text-align: center;
-    min-height: 20em;
-    max-height: 10em;
+    /* max-height: 10em;
+    min-height: 20em; */
     background-color: whitesmoke;
-    /* border-radius: 5% / 50%; */
-    width: 50%;
+    width: 40%;
+    height: auto;
     position: absolute;
     z-index: 3;
-    /* top:0;    */
-    bottom: 0;
+    left: 10%;
+    top: 10%;
     display: none;
     box-shadow: 0 0 20px;
+    text-align: left;
+    padding: 40px;
+}
+
+.fancy_modal #close_button {
+    border: none;
+    background-color: whitesmoke;
+    color: #611818;
+    font-size: 40px;
+    float: right;
+}
+
+.fancy_modal p {
+    font-family: 'Roboto Flex', sans-serif;
+    line-height: 2;
 }
 
 .fancy_modal h2 {
+    margin-top: 10%;
     color: #611818;
     font-family: 'Libre Bodoni', serif;
     position: relative;
 }
 
+.fancy_modal #divider {
+    
+    background-image: linear-gradient(
+        90deg,
+        hsl(0deg 60% 24%) 7%,
+        hsl(0deg 33% 43%) 48%,
+        hsl(0deg 29% 67%) 67%,
+        hsl(0deg 0% 96%) 100%
+      );
+    height: 3px;
+}
+
+.fancy_modal #read_more_button {
+    background-image: linear-gradient(
+  90deg,
+  hsl(0deg 60% 24%) 0%,
+  hsl(2deg 56% 26%) 32%,
+  hsl(4deg 52% 29%) 44%,
+  hsl(5deg 49% 32%) 53%,
+  hsl(7deg 45% 35%) 60%,
+  hsl(9deg 42% 38%) 66%,
+  hsl(11deg 39% 41%) 73%,
+  hsl(13deg 36% 44%) 81%,
+  hsl(14deg 33% 47%) 100%
+);
+    border: none;
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 10%;
+    padding: 5px;
+}
 
 /* animations */
 @keyframes fadeOut {
@@ -105,6 +152,13 @@ body, html {
 
     to {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .fancy_modal {
+        width: 90%;
+        margin: 10%;
     }
 }
 
